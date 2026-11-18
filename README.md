@@ -1,6 +1,6 @@
 # Lumina Tasks MCP server
 
-Remote MCP server for [Lumina Tasks](https://lumina-app.me), a tasks, habits, notes and focus app. It lets an AI assistant (Claude, ChatGPT, or any MCP client) save what you talk about straight into your Lumina.
+Remote MCP server for [Lumina](https://lumina-app.me), a tasks, habits, notes and focus app. "Lumina Tasks" is the name Lumina uses in directories: same app, same account, same server. It lets an AI assistant (Claude, ChatGPT, or any MCP client) save what you talk about straight into your Lumina.
 
 **Server URL:** `https://lumina-app.me/mcp`
 
