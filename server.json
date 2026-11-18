@@ -1,0 +1,9 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.github.stoptimed/lumina",
+  "description": "Save tasks, habits, notes and calendar events from your AI assistant into Lumina.",
+  "version": "1.0.0",
+  "websiteUrl": "https://lumina-app.me/en/ai",
+  "repository": { "url": "https://github.com/stoptimed/lumina-mcp", "source": "github" },
+  "remotes": [{ "type": "streamable-http", "url": "https://lumina-app.me/mcp" }]
+}
