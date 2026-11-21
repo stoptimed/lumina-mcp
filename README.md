@@ -12,14 +12,23 @@ Remote MCP server for [Lumina](https://lumina-app.me), a tasks, habits, notes an
 
 | Tool | What it does | Scope |
 |---|---|---|
-| `add_task` | Add a task, with an optional date, time, repeat and priority | `tasks.write` |
+| `list_today` | List the day's tasks (with their steps) and habits | `tasks.read` |
+| `search` | Search tasks (title, notes or steps), habits and notes | `tasks.read` |
+| `get_task` | Read one task: notes, date, time, priority, repeat, reminder and its steps | `tasks.read` |
+| `add_task` | Add a task, with an optional date, time, repeat, priority and steps | `tasks.write` |
+| `add_subtasks` | Add steps to an existing task | `tasks.write` |
+| `complete_task` | Check or uncheck a task (its steps follow, as in the app) | `tasks.write` |
+| `complete_subtask` | Check or uncheck a step (the task is checked when all its steps are) | `tasks.write` |
+| `update_task` | Change a task's title, notes, date, time, priority, repeat or reminder | `tasks.edit` |
+| `rename_subtask` | Rename a step | `tasks.edit` |
+| `delete_task` | Delete a task and its steps | `tasks.edit` |
+| `delete_subtask` | Delete a step | `tasks.edit` |
 | `add_habit` | Add a habit on chosen weekdays | `habits.write` |
 | `add_note` | Add a note | `notes.write` |
 | `add_event` | Add an event to the linked Google Calendar | `calendar.write` |
-| `list_today` | List today's tasks and habits | `tasks.read` |
-| `complete_task` | Mark a task done | `tasks.write` |
-| `search` | Search tasks, habits and notes | `tasks.read` |
 | `add_to_group` | Add a task to a shared group (editor role) | `groups.write` |
+
+Priority goes from 0 (none) to 3 (high); the app shows it as 1 to 3 colored icons. Changes and deletions (`tasks.edit`) apply right away; an assistant connected before this permission existed must be reconnected to get it.
 
 Everything an assistant adds shows the assistant's name and waits in the app's AI inbox until you keep it, unless you turn on "Validate automatically".
 
